@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Livechart Sync",
+    "version": "1.0",
+    "description": "Syncs watched episodes in Livechart.me",
+    "icons": {
+        "48": "icons/sus.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.livechart.me/users/*/library"
+            ],
+            "js": [
+                "js/user.js"
+            ]
+        }
+    ]
+}
