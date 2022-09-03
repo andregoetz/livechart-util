@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Step 2</title>
+    <meta charset="UTF-8">
+    <script src="./js/token.js"></script>
+</head>
+
+<body>
+    <form method="post" action="https://myanimelist.net/v1/oauth2/token">
+        <div>
+            <label for="challenge_input">Code Challenge:</label>
+            <input type="text" id="challenge_input" name="code_verifier" placeholder="Enter Code Challenge" value="">
+        </div>
+        <div>
+            <input type="submit" value="Get Token">
+        </div>
+        <input type="hidden" name="code" value="{{ code }}">
+        <input type="hidden" name="client_id" value="29420f00349900a89dee84f3fe1375f9">
+        <input type="hidden" name="client_secret" value="437fb06489ff8e657773574ac4c86ff87becffb2ba5851aa6de2311d2658f016">
+        <input type="hidden" name="grant_type" value="authorization_code">
+    </form>
+</body>
+
+</html>

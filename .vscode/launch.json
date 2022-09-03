@@ -30,6 +30,20 @@
             "request": "launch",
             "reAttach": true,
             "addonPath": "${workspaceFolder}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch nodemon",
+            "runtimeArgs": [
+                "run",
+                "dev"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${fileDirname}",
         }
     ]
 }
