@@ -15,5 +15,9 @@
                 "js/user.js"
             ]
         }
+    ],
+    "permissions": [
+        "activeTab",
+        "https://api.myanimelist.net/v2/"
     ]
 }
