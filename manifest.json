@@ -30,7 +30,7 @@
     ],
     "browser_specific_settings": {
         "gecko": {
-          "id": "livec_sync@andiru.net",
+          "id": "livec_util@andiru.net",
           "strict_min_version": "42.0"
         }
       }
